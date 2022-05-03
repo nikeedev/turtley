@@ -1,16 +1,28 @@
-# This is a sample Python script.
 
-# Press F5 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+from turtle import *
+
+pensize(20)
+speed(120)
+hideturtle()
+
+while True:
+    times = 0
+    for _ in range(100):
+        left(89)
+        forward(80)
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+    if times == 5:
+        times = 0
+        penup()
+        goto(0, 0)
+        pendown()
+        clear()
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+    penup()
+    forward(120)
+    pendown()
+    times += 1
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
